@@ -35,8 +35,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main
 
-      - name: Run compiler.py script
-        run: python .github/workflows/compiler.py
+      - name: Run script.py script
+        run: python .github/workflows/script.py
 
       - name: Add, commit and push changes
         run: |
