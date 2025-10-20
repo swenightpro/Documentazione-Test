@@ -15,8 +15,8 @@
 
 Il progetto è articolato su due repository distinti, ospitati all'interno dell'organizzazione del gruppo, al fine di mantenere una netta separazione tra la documentazione di progetto e l'implementazione del prodotto software.
 
--   📄 **Repository Documentazione:** `[https://github.com/swenightpro/Documentazione]` (Questo repository)
--   💻 **Repository del Prodotto Software:** `[https://github.com/swenightpro/nightpro]` (Prossimamente...)
+-   📄 **Repository Documentazione:** `[https://github.com/swenightpro/Documentazione]`
+-   💻 **Repository del Prodotto Software:** `[https://github.com/swenightpro/nightpro]`
 
 ## 3. Struttura delle Directory
 
