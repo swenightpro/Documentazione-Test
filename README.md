@@ -1,32 +1,42 @@
-# Progetto di Ingegneria del Software 2025/26
-### Gruppo: NightPro
-
-<p align="center">
-  Benvenuti nel repository ufficiale del gruppo <strong>NightPro</strong> per il progetto del corso di Ingegneria del Software.
-</p>
+# Documentazione del Progetto di Ingegneria del Software
+### Anno Accademico 2025/2026
 
 ---
 
-## 📖 Informazioni sul Progetto
+## 1. Informazioni Generali
 
-Questo repository contiene tutta la documentazione prodotta per il progetto del corso di **Ingegneria del Software** (Anno Accademico 2025-26), del corso di Laurea Triennale in Informatica dell'**Università degli Studi di Padova**.
+- **Corso:** Ingegneria del Software
+- **Corso di Laurea:** Informatica (L-31)
+- **Università:** Università degli Studi di Padova
+- **Anno Accademico:** 2025/2026
+- **Gruppo di Lavoro:** NightPRO
 
-Il progetto sarà sviluppato in collaborazione con un'azienda partner che verrà definita prossimamente. L'obiettivo è applicare le metodologie di ingegneria del software per creare una soluzione robusta e ben documentata.
+## 2. Architettura dei Repository
 
-## 📂 Struttura del Repository
+Il progetto è articolato su due repository distinti, ospitati all'interno dell'organizzazione del gruppo, al fine di mantenere una netta separazione tra la documentazione di progetto e l'implementazione del prodotto software.
 
-La documentazione è organizzata nelle seguenti directory principali:
+-   📄 **Repository Documentazione:** `[https://github.com/swenightpro/Documentazione]` (Questo repository)
+-   💻 **Repository del Prodotto Software:** `[https://github.com/swenightpro/nightpro]` (Prossimamente...)
 
--   `📁 .github/workflows`: Contiene le configurazioni per le GitHub Actions, utilizzate per automatizzare la compilazione dei nostri documenti LaTeX.
--   `📁 src`: Contiene tutti i file sorgente `.tex` della documentazione, suddivisi per capitoli e sezioni.
-    -   `Candidatura`: Sorgenti relativi alla fase di candidatura.
-    -   `template`: Il template LaTeX di base su cui è costruita tutta la nostra documentazione.
--   `📁 output`: Contiene le versioni compilate in `.pdf` di tutti i documenti ufficiali, pronti per la consultazione e la consegna.
-    -   `Candidatura`: PDF relativi alla fase di candidatura.
+## 3. Struttura delle Directory
 
-## 👥 Il Nostro Team
+La struttura logica di questo repository è finalizzata a garantire una chiara organizzazione dei documenti.
 
-Il gruppo NightPro è composto da sette studenti appassionati di informatica e sviluppo software:
+-   **`.github/workflows`**:
+    Contiene le definizioni per le GitHub Actions, impiegate per l'automazione dei processi di compilazione dei documenti sorgente in formato LaTeX.
+
+-   **`src`**:
+    Questa directory contiene i file sorgente (`.tex`) di tutta la documentazione.
+    -   `Candidatura`: File sorgente relativi alla documentazione di candidatura.
+    -   `template`: Contiene il template LaTeX di base utilizzato per la stesura di tutti i documenti, al fine di garantirne l'uniformità stilistica.
+
+-   **`output`**:
+    Questa directory contiene le versioni finali e compilate (`.pdf`) di tutti i documenti prodotti.
+    -   `Candidatura`: Documenti PDF relativi alla fase di candidatura.
+
+## 4. Componenti del Gruppo
+
+Il gruppo di lavoro NightPro è composto dai seguenti membri:
 
 | Cognome         | Nome            | Matricola |
 | :-------------- | :-------------- | :-------- |
@@ -38,10 +48,8 @@ Il gruppo NightPro è composto da sette studenti appassionati di informatica e s
 | Perozzo         | Samuele         | 2110989   |
 | Ponso           | Giovanni        | 2000558   |
 
-## 📧 Contatti
+## 5. Contatti
 
-Per qualsiasi domanda, proposta o informazione, potete contattarci tramite la nostra email di gruppo:
+Per comunicazioni relative al progetto, è possibile contattare il gruppo all'indirizzo email:
 
 **[swe.nightpro@gmail.com](mailto:swe.nightpro@gmail.com)**
-
----
