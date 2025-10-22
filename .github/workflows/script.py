@@ -1,6 +1,7 @@
 import os
 import shutil
 from copy import deepcopy as dc
+import subprocess
 
 # Viene cancellato il contenuto della cartella docs se questa è presente
 def clear_docs():
@@ -9,18 +10,39 @@ def clear_docs():
     os.mkdir("docs")
 
 # Partendo dal percorso di un file latex, viene compilato il file pdf e lo sposta nella sottocartella corretta
+import os
+import shutil
+import subprocess  # <-- 1. Importa il modulo subprocess
+
+# Partendo dal percorso di un file latex, viene compilato il file pdf e lo sposta nella sottocartella corretta
 def latex_to_pdf(src_file: list[str]):
     src = os.path.join("src", *src_file)
     
-    # Viene compilato il file pdf
-    os.system("latexmk -pdf " + src)
-    # Vengono eliminati i file temporanei
-    os.system("latexmk -c " + src)
+    # 'check=True' fa sì che lo script si fermi se la compilazione LaTeX fallisce
+    try:
+        print(f"--- Compilando {src} ---")
+        subprocess.run(["latexmk", "-pdf", src], check=True, capture_output=True, text=True)
+        
+        print(f"--- Pulendo file temporanei per {src} ---")
+        subprocess.run(["latexmk", "-c", src], check=True, capture_output=True, text=True)
+    
+    except subprocess.CalledProcessError as e:
+        # Se la compilazione fallisce, stampa l'errore di LaTeX e interrompi
+        print(f"ERRORE durante la compilazione di {src}:")
+        print(e.stderr)
+        print(e.stdout)
+        raise  # Interrompe lo script
     
     # Il pdf generato viene spostato nella sottocartella corretta
     output_file = src_file[-1].replace(".tex", ".pdf")
     output_file_path = os.path.join("docs", *src_file[:-1], output_file)
+    
+    # Assicurati che la cartella di destinazione esista (anche se il tuo script main dovrebbe già farlo)
+    os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+    
+    print(f"--- Spostando {output_file} in {output_file_path} ---")
     shutil.move(output_file, output_file_path)
+
 
 # Per ognuno dei file .tex trovati, vengono generate le sottocartelle necessarie in docs e viene generato il pdf
 def generate_docs(paths):
