@@ -1,6 +1,6 @@
-# Report di compilazione del 2025-10-23T22:55:38+00:00
+# Report di compilazione del 2025-10-24T10:24:36+00:00
 
-Compilazione basata sul commit d2e1dfcb03a4c4a0c7a054755686ca9dd775c8d8 (first commit)
+Compilazione basata sul commit bc0ec38fae86c395adc6cd836777041dfd8fe3da (base: bc0ec38)
 
 ## Falliti
 💡 Nessun errore di compilazione
@@ -11,8 +11,6 @@ Compilazione basata sul commit d2e1dfcb03a4c4a0c7a054755686ca9dd775c8d8 (first c
 ✅ [docs/Candidatura/Verbali/Verbali Interni/verbale_interno_15-10-25.pdf](docs/Candidatura/Verbali/Verbali%20Interni/verbale_interno_15-10-25.pdf)
 
 ✅ [docs/Candidatura/Verbali/Verbali Interni/verbale_interno_20-10-25.pdf](docs/Candidatura/Verbali/Verbali%20Interni/verbale_interno_20-10-25.pdf)
-
-✅ [docs/Candidatura/main.pdf](docs/Candidatura/main.pdf)
 
 ✅ [docs/template/template.pdf](docs/template/template.pdf)
 
